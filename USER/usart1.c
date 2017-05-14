@@ -10,7 +10,8 @@
 #include <stdarg.h>
 #include "string.h"
 #include "stdio.h"
-
+#include "lcd.h"
+#include "text.h"
 #define MAX(x, y) (x) > (y) ? (x) : (y)
 u8 data_us=0,USART_RX_buf[50],USART_RX=0,data_transfer=0,data_us1=0,USART_RX_buf1[50],USART_RX1;
 char data_cu[100],state_0x0a,data_cu1[100],state_0x0a1;
@@ -66,6 +67,7 @@ void USART1_IRQHandler(void)
 {
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
 		{
+			   u8 i;
 					data_transfer=USART_ReceiveData(USART1);	//读取接收到的数据
 					//USART_SendData(USART2, data_transfer);
 					USART_RX_buf[USART_RX]=data_transfer;
@@ -83,7 +85,20 @@ void USART1_IRQHandler(void)
 							state_0x0a=2;
 						}
 					}
-	 
+					if(state_0x0a==2)
+				{
+					for(i=0;i<40;i++)
+					{
+						xianshi[i]=0;
+					}
+					for(i=1;i<USART_RX-1;i++)
+					{
+							xianshi[i-1]=USART_RX_buf[i];
+					}
+						
+					//Show_Str(-10,100,144,16,xianshi,16,0);
+					state_0x0a=0;
+				}
      } 
 		USART_ClearITPendingBit(USART1,USART_IT_RXNE);
 } 

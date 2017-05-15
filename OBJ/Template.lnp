@@ -34,6 +34,7 @@
 "..\obj\text.o"
 "..\obj\sdio_sdcard.o"
 "..\obj\usart1.o"
+"..\obj\ds18b20.o"
 "..\obj\bmp.o"
 "..\obj\gif.o"
 "..\obj\piclib.o"

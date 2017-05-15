@@ -3,96 +3,38 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: μVision V5.12.0.0
-Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: li Microsoft, Microsoft, LIC=JL2VE-5CF7G-I5ITC-7RXBX-GN90G-RXA7N
+IDE-Version: μVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: llj llj, llj, LIC=UJWBS-LH012-8F4IE-5QC3Z-95MIM-B5T9R
  
 Tool Versions:
-Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.05 (build 41)
-Assembler:       Armasm.exe V5.05 (build 41)
-Linker/Locator:  ArmLink.exe V5.05 (build 41)
-Library Manager: ArmAr.exe V5.05 (build 41)
-Hex Converter:   FromElf.exe V5.05 (build 41)
-CPU DLL:         SARMCM3.DLL V5.12.0.0
-Dialog DLL:      DCM.DLL V1.13.0.0
-    Target DLL: Segger\JL2CM3.dll
-Dialog DLL:      TCM.DLL V1.14.2.0
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  D:\Program Files\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.16.0
+Dialog DLL:      TCM.DLL V1.14.6.0
  
 <h2>Project:</h2>
-E:\我的程序\STM32\201704-\汉字显示1\USER\Template.uvprojx
-Project File Date:  05/14/2017
+E:\my_code\汉字显示1\USER\Template.uvprojx
+Project File Date:  05/15/2017
 
 <h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Program Files\ARM\ARMCC\Bin'
 Build target 'Template'
 "..\OBJ\Template.axf" - 0 Error(s), 0 Warning(s).
-argument of type "char *" is incompatible with parameter of type "u8 *"
-                        Show_Str(150,140,144,16,xia,16,1);
-main.c(17): warning:  #177-D: variable "t" was declared but never referenced
-        u8 t=0,i;
-main.c(17): warning:  #177-D: variable "i" was declared but never referenced
-        u8 t=0,i;
-main.c(19): warning:  #177-D: variable "ret" was declared but never referenced
-        u16 ret;
-main.c: 4 warnings, 0 errors
-linking...
-Program Size: Code=29610 RO-data=3098 RW-data=196 ZI-data=1091260  
-FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 4 Warning(s).
-Load "..\\OBJ\\Template.axf" 
-Set JLink Project File to "E:\我的程序\STM32\201704-\汉字显示1\USER\JLinkSettings.ini"
-* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.91b, compiled Sep 15 2014 09:17:56
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20090928 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F103ZE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 1000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-s: 8192
-Watchpoints:          4
-JTAG speed: 1000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-t_sect" was set but never used
-      u32 fre_clust=0, fre_sect=0, tot_sect=0;
-..\FATFS\exfuns\fattester.c(281): warning:  #550-D: variable "res" was set but never used
-        u8 res;
-..\FATFS\exfuns\fattester.c(293): warning:  #550-D: variable "res" was set but never used
-        u8 res;
-..\FATFS\exfuns\fattester.c: 6 warnings, 0 errors
-compiling diskio.c...
-compiling ff.c...
-linking...
-Program Size: Code=27874 RO-data=3082 RW-data=172 ZI-data=1091252  
-FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\my_code\汉字显示1\USER\RTE
+  D:\Program Files\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

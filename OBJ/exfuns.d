@@ -1,9 +1,9 @@
 ..\obj\exfuns.o: ..\FATFS\exfuns\exfuns.c
-..\obj\exfuns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\exfuns.o: D:\Program Files\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\exfuns.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\exfuns.o: ..\USER\stm32f10x.h
 ..\obj\exfuns.o: ..\CORE\core_cm3.h
-..\obj\exfuns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\exfuns.o: D:\Program Files\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\exfuns.o: ..\USER\system_stm32f10x.h
 ..\obj\exfuns.o: ..\USER\stm32f10x_conf.h
 ..\obj\exfuns.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
